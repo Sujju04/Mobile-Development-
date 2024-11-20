@@ -1,0 +1,22 @@
+class Book {
+  String title;
+  String author;
+  int yearPublished;
+
+  Book(this.title, this.author, this.yearPublished);
+
+  void displayDetails() {
+    print("Title: $title");
+    print("Author: $author");
+    print("Year Published: $yearPublished");
+  }
+}
+
+void main() {
+  Book book1 = Book("Games Of Thrones", "George R.R. Martin", 1996);
+  book1.displayDetails();
+}
+// Class Definition (class Book): This defines a blueprint for Book objects with properties for the title, writer, and year of publish.
+//Constructor (Book(this.title, this.author, this.yearPublished)): forms the properties when creating a new Book .
+//Method (displayDetails): Prints the details of the book to the console.
+//Main Function (void main()): The entry point of the program where a Book object is created and its details are displayed.
